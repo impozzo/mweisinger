@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/menu2.css">
+    <link rel="stylesheet" href="/css/utility-classes.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>MWeisinger.xyz</title>
+</head>
+
+<body>
+    <div id="main-container">
+        
+        <header>
+
+
+            <nav id="mySidenav" class="sidenav">
+                <div><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></div>
+                <div class="sidebar-link"><a href="index.html">Home</a></div>
+                <div class="sidebar-link"><a href="about.html">About</a></div>
+                <div class="sidebar-link"><a href="/weather.html">Weather Api</a></div>
+                <div class="sidebar-link"><a href="resume.html">Resume</a></div>
+                <div class="sidebar-link"><a href="contact.html">Contact</a></div>
+            </nav>
+            <!-- Use any element to open the sidenav -->
+            <span id="open-btn" onclick="openNav()"><i class="fas fa-bars"></i> menu</span>
+            <div class="logo-text">MWeisinger.xyz</div>
+        </header>
+        <main>
+            <hr>
+            <h1>Michael Weisinger</h1>
+            <div class="container  bg-info rounded">
+                <div class="row">
+                    <h2>Location: 
+                        ${name}</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="http://openweathermap.org/img/wn/${icon}@2x.png">
+                    </div>
+                    <div class="col">
+                        <p>Today: ${description}</p>
+                        <p>Temperature: ${tempFarenheight}&#176;</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="footer-copy">copyright Michael Weisinger</p>
+        </footer>
+        <div id="modal" onclick="closeNav()"></div>
+    </div>
+    <script src="/js/menu2.js"></script>
+    <script src="https://kit.fontawesome.com/348dbcf472.js" crossorigin="anonymous"></script>
+    </script>
+</body>
+
+</html>
