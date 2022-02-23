@@ -93,7 +93,7 @@ p{
     width: 50%;
     height: 800px; 
     min-width: 400px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, .9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .8);
     margin: 0 auto 50px auto;
 }
 
